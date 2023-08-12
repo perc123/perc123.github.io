@@ -1,4 +1,4 @@
-const parallax_el = document.querySelectorAll(".parallax");
+/*const parallax_el = document.querySelectorAll(".parallax");
 const main = document.querySelector("main");
 
 let xValue = 0, yValue = 0;
@@ -73,3 +73,4 @@ timeline.from(".text h1", {
 },
 "3"
 );
+*/
