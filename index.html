@@ -1,46 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fanis Gioles Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS stylesheet -->
 </head>
 <body>
-    <header class="hide">
-        <nav>
-            <img src="C:/Users/fanis/Desktop/website/fotos/soundart.gif" alt="Fanis Gioles" class="logo">
-        
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">COURSE</a></li>
-                <li><a href="#">CONTENT</a></li>
-            </ul>
-            
-        </nav>
-
-        <!-- <div class="image-links">
-            <a href="performance.html"><img src="C:/Users/fanis/Desktop/website/fotos/soundart.gif" alt="Performance"></a>
-            <a href="sound_art.html"><img src="C:/Users/fanis/Desktop/website/fotos/soundart.gif" alt="Sound Art"></a>
-            <a href="creative_coding.html"><img src="C:/Users/fanis/Desktop/website/fotos/soundart.gif" alt="Creative Coding"></a>
-        </div> -->
-    </header>
-    <main>
-        <div class="vignette hide"></div>
-        <img src="fotos/sound.jpeg" data-speedx="0.3" data-speedy="0.38" data-speedz="0" data-rotation="0" data-distance="-200" class="parallax bd-img">
-        <img src="fotos/fanis1.jpg" data-speedx="0.15" data-speedy="0.2" data-speedz="0.05" data-rotation="0.09" data-distance="500"class="parallax img1">
-        <img src="fotos/fanis1.jpg" data-speedx="0.125" data-speedy="0.15" data-speedz="0.09" data-rotation="0.09" data-distance="500"class="parallax img2">
-
-        <div class="text parallax" data-speedx="0.1" data-speedy="0.1" data-speedz="0.12" data-rotation="0.01" data-distance="2500" >
-            <h2>Fanis</h2>
-            <h1>Gioles
-            </h1>
+    <header>
+        <div id="logo">
+            <h1>Fanis Gioles</h1>
         </div>
-        <img src="fotos/soundart.gif" data-speedx="0.08" data-speedy="0.08" data-speedz="0.15" data-rotation="0.09" data-distance="500" class="parallax img3">
-    </main>
+        <nav>
+            <ul>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#sound-art">Sound Art</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js">
-    </script>
-    <script src="app.js"></script>
+    <section id="performance">
+        <h1 class="section-title">Performance</h1>
+        <img src="fotos/performance.jpg" alt="Performance">
+        <!-- Your content for the 'Performance' section goes here -->
+    </section>
+
+    <section id="sound-art">
+        <h1 class="section-title">Sound Art</h1>
+        <img src="fotos/sound.jpg" alt="Sound Art">
+        <!-- Your content for the 'Sound Art' section goes here -->
+    </section>
+
+    <section id="multimedia">
+        <h1 class="section-title">Multimedia</h1>
+        <img src="fotos/multimedia.jpg" alt="Multimedia">
+        <!-- Your content for the 'Multimedia' section goes here -->
+    </section>
+
+    <!-- You can add more sections and content as needed -->
+
+    <footer>
+        <p>&copy; 2023 Fanis Gioles. All rights reserved.</p>
+    </footer>
 </body>
 </html>
