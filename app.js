@@ -40,7 +40,7 @@ if(window.innerWidth >= 725) {
     main.style.maxHeight = `${window.innerHeight * 1.6}px`;
 }
 
-/* GSAP Animation*/
+
 
 let timeline = gsap.timeline();
 
@@ -73,4 +73,5 @@ timeline.from(".text h1", {
 },
 "3"
 );
+
 */
