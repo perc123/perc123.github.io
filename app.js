@@ -1,12 +1,28 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const performanceLink = document.getElementById('performance-link');
-    const soundArtLink = document.getElementById('sound-art-link');
-    const multimediaLink = document.getElementById('multimedia-link');
-    
+    const performanceImage = document.querySelector('#performance img');
+    const soundArtImage = document.querySelector('#sound-art img');
+    const multimediaImage = document.querySelector('#multimedia img');
+
     const performanceSection = document.getElementById('performance');
     const soundArtSection = document.getElementById('sound-art');
     const multimediaSection = document.getElementById('multimedia');
-    
+
+    performanceSection.style.display = 'none';
+    soundArtSection.style.display = 'none';
+    multimediaSection.style.display = 'none';
+
+    performanceImage.addEventListener('click', () => {
+        toggleSection(performanceSection);
+    });
+
+    soundArtImage.addEventListener('click', () => {
+        toggleSection(soundArtSection);
+    });
+
+    multimediaImage.addEventListener('click', () => {
+        toggleSection(multimediaSection);
+    });
+
     const toggleSection = (section) => {
         if (section.style.display === 'none') {
             section.style.display = 'block';
@@ -14,16 +30,4 @@ document.addEventListener('DOMContentLoaded', function () {
             section.style.display = 'none';
         }
     };
-    
-    performanceLink.addEventListener('click', () => {
-        toggleSection(performanceSection);
-    });
-    
-    soundArtLink.addEventListener('click', () => {
-        toggleSection(soundArtSection);
-    });
-    
-    multimediaLink.addEventListener('click', () => {
-        toggleSection(multimediaSection);
-    });
 });
