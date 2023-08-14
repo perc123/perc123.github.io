@@ -49,10 +49,10 @@ nav ul li a:hover {
     text-decoration: underline; /* Underline on hover */
 }
 
-/* Style the sections */
+/* Style the sections 
 section {
     padding: 40px;
-}
+}*/
 
 /* Style the footer */
 footer {
@@ -70,13 +70,39 @@ h1 {
     margin: 0 0 5px; /* Adjust margins to align the header and h1 element */
 }
 
-/* Hide section titles by default */
-.section-title {
+/* Add hover effect to images */
+section img {
+    max-width: 20%;
+    height: auto;
+    transition: opacity 0.3s;
+    margin: 0 10px; /* Add margin to separate the images */
+    display: inline-block;
+}
+
+/* Center the images in a row */
+#logo {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+section:hover img {
+    opacity: 0.7;
+}
+
+/* Style the image containers */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the section titles above the images */
+.image-container .section-title {
     display: none;
     position: absolute;
-    top: 50%;
+    top: -30px; /* Adjust the distance from the image */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     background-color: rgba(255, 255, 255, 0.9);
     padding: 10px 20px;
     border-radius: 5px;
@@ -86,32 +112,6 @@ h1 {
 }
 
 /* Display section titles on image hover */
-section:hover .section-title {
-    display: block;
-}
-
-/* Add hover effect to images */
-section img {
-    max-width: 20%;
-    height: auto;
-    transition: opacity 0.3s;
-    margin: 0 10px; /* Add margin to separate the images */
-}
-
-/* Center the images in a row */
-#logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-section:hover img {
-    opacity: 0.7;
-}
-
-/* Hide the sections initially */
-#performance,
-#sound-art,
-#multimedia {
-    display: none;
+.image-container:hover .section-title {
+    display: grid;
 }

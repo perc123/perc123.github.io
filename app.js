@@ -1,26 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const performanceImage = document.querySelector('#performance img');
-    const soundArtImage = document.querySelector('#sound-art img');
-    const multimediaImage = document.querySelector('#multimedia img');
+    const sections = [
+        { link: document.querySelector('a[href="#upcoming"]'), section: document.getElementById('upcoming') },
+        { link: document.querySelector('a[href="#about"]'), section: document.getElementById('about') },
+        { link: document.querySelector('a[href="#contact"]'), section: document.getElementById('contact') },
+        /* { link: document.querySelector('a[href="#performance"]'), section: document.getElementById('performance') },
+        { link: document.querySelector('a[href="#sound-art"]'), section: document.getElementById('sound-art') },
+        { link: document.querySelector('a[href="#multimedia"]'), section: document.getElementById('multimedia') }, */
+    ];
 
-    const performanceSection = document.getElementById('performance');
-    const soundArtSection = document.getElementById('sound-art');
-    const multimediaSection = document.getElementById('multimedia');
+    sections.forEach(item => {
+        item.section.style.display = 'none';
 
-    performanceSection.style.display = 'none';
-    soundArtSection.style.display = 'none';
-    multimediaSection.style.display = 'none';
-
-    performanceImage.addEventListener('click', () => {
-        toggleSection(performanceSection);
-    });
-
-    soundArtImage.addEventListener('click', () => {
-        toggleSection(soundArtSection);
-    });
-
-    multimediaImage.addEventListener('click', () => {
-        toggleSection(multimediaSection);
+        item.link.addEventListener('click', () => {
+            sections.forEach(otherItem => {
+                if (otherItem.section !== item.section) {
+                    otherItem.section.style.display = 'none';
+                }
+            });
+            toggleSection(item.section);
+        });
     });
 
     const toggleSection = (section) => {
