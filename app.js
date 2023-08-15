@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     const slider = document.querySelector('.slider');
-    const sectionLinks = document.getElementById('section-links'); // Add this line
+    const sectionLinks = document.getElementById('section-links');
 
-    sections.forEach(item => {
+    sections.forEach((item, index) => {
         item.section.style.display = 'none';
 
         item.link.addEventListener('click', () => {
@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             toggleSection(item.section);
             slider.style.display = 'none';
-            sectionLinks.style.display = 'none'; // Add this line
+            sectionLinks.style.display = 'none';
+            updateSectionStyles(index); // Update section styles when a section link is clicked
         });
     });
 
@@ -30,4 +31,35 @@ document.addEventListener('DOMContentLoaded', function () {
             section.style.display = 'none';
         }
     };
+
+    const navigationAuto = document.querySelector('.navigation-auto');
+    const radio1 = document.getElementById('radio1');
+    const radio2 = document.getElementById('radio2');
+    const radio3 = document.getElementById('radio3');
+    const performanceLink = document.querySelector('a[href="pages/performance/performance.html"]');
+    const soundLink = document.querySelector('a[href="pages/sound/sound.html"]');
+    const multimediaLink = document.querySelector('a[href="pages/multimedia/multimedia.html"]');
+    const performance = document.getElementById('performance');
+    const sound = document.getElementById('sound');
+    const multimedia = document.getElementById('multimedia');
+
+    performance.style.fontWeight = 'normal';
+    sound.style.fontWeight = 'normal';
+    multimedia.style.fontWeight = 'normal';
+
+    navigationAuto.addEventListener('change', () => {
+        performance.style.fontWeight = 'normal';
+        sound.style.fontWeight = 'normal';
+        multimedia.style.fontWeight = 'normal';
+
+        if (radio1.checked) {
+            performance.style.fontWeight = 'bold';
+        }
+        if (radio2.checked) {
+            sound.style.fontWeight = 'bold';
+        }
+        if (radio3.checked) {
+            multimedia.style.fontWeight = 'bold';
+        }
+    });
 });
