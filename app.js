@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', function () {
         { link: document.querySelector('a[href="#upcoming"]'), section: document.getElementById('upcoming') },
         { link: document.querySelector('a[href="#about"]'), section: document.getElementById('about') },
         { link: document.querySelector('a[href="#contact"]'), section: document.getElementById('contact') },
-        /* { link: document.querySelector('a[href="#performance"]'), section: document.getElementById('performance') },
-        { link: document.querySelector('a[href="#sound-art"]'), section: document.getElementById('sound-art') },
-        { link: document.querySelector('a[href="#multimedia"]'), section: document.getElementById('multimedia') }, */
     ];
+
+    const slider = document.querySelector('.slider');
+    const sectionLinks = document.getElementById('section-links'); // Add this line
 
     sections.forEach(item => {
         item.section.style.display = 'none';
@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
             toggleSection(item.section);
+            slider.style.display = 'none';
+            sectionLinks.style.display = 'none'; // Add this line
         });
     });
 
