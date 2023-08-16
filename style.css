@@ -308,7 +308,7 @@ section:hover img {
     /* Adjust body font size and padding */
     body {
         font-size: 14px; /* Adjust font size for smaller screens */
-        padding: 2vw; /* Adjust padding for smaller screens */
+        padding: 1vw; /* Adjust padding for smaller screens */
     }
 
     /* Modify header padding and margins */
