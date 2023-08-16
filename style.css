@@ -99,7 +99,6 @@ section:hover img {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 20px; /* Adjust the margin-top as needed */
-
 }
 
 .slides{
@@ -303,125 +302,118 @@ section:hover img {
 }
 
 
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
+/* Add a media query for screens with a max-width of 500px */
+@media (max-width: 1300px) {
+
+    /* Adjust body font size and padding */
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 2vw; /* Adjust padding for smaller screens */
+    }
+
+    /* Modify header padding and margins */
     header {
+        padding: 7vw 2vw; /* Adjust padding for smaller screens */
+        margin: 0;
+    }
+
+    #logo {
+        margin-right: 300px;
+    }
+    /* Modify navigation menu margins and font size */
+    nav ul {
+        margin-left: 0; /* Remove left margin for smaller screens */
+    }
+
+    nav ul li {
+        margin-right: 10px; /* Adjust margin for smaller screens */
+    }
+
+    /* Adjust section padding */
+    section {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    /* Modify footer padding and margin-top */
+    footer {
         padding: 10px; /* Adjust padding for smaller screens */
+        margin-top: 10px; /* Adjust margin-top for smaller screens */
     }
-    
-    nav ul {
-        margin-left: 10px; /* Adjust margin for smaller screens */
+
+    /* Modify h1 font size */
+    h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
     }
-    
-    /* ... (Other adjustments for smaller screens) ... */
-    
-    .slider {
-        width: 100%; /* Make the slider full width */
-        height: auto; /* Allow height to adjust based on content */
+
+    /* Modify slider styles */
+    .slider{
+        width: 600px;
+        height: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: absolute;
+        top: 350px; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 20px; /* Adjust the margin-top as needed */
     }
+
+
+.slides{
+    width: 500%;
+    display: flex;
     
-    .slides {
-        width: 500%; /* Keep the width of slides for animation */
-        height: auto; /* Allow height to adjust based on content */
-    }
-    
-    .slide {
-        width: 100%; /* Make each slide full width */
-    }
-    
-    .slide img {
-        width: 100%; /* Make images responsive */
-        height: auto; /* Allow height to adjust based on content */
-    }
-    
-    /* ... (Other adjustments for smaller screens) ... */
-    
-    #section-links {
-        padding: 15vh 0; /* Adjust padding for smaller screens */
-    }
 }
 
-/* ... (Previous code) ... */
-
-/* Responsive adjustments for max-width: 900px */
-@media screen and (max-width: 900px) {
-    header {
-        padding: 5px; /* Adjust padding for smaller screens */
-    }
-    
-    nav ul {
-        margin-left: 5px; /* Adjust margin for smaller screens */
-    }
-    
-    /* ... (Other adjustments for smaller screens) ... */
-    
-    #section-links {
-        padding: 5vh 0; /* Adjust padding for smaller screens */
-    }
-
-
-     /* Add red borders to containers */
-     body {
-        border: 2px solid red;
-    }
-    
-    header {
-        border: 2px solid red;
-    }
-    
-    nav ul {
-        border: 2px solid red;
-    }
-    
-    /* ... (Other container borders) ... */
-    
-    .slider {
-        border: 2px solid red;
-    }
-    
-    .slides {
-        border: 2px solid red;
-    }
-    
-    .slide {
-        border: 2px solid red;
-    }
-    
-    /* ... (Other container borders) ... */
-    
-    #section-links {
-        border: 2px solid red;
-    }
+.slides input{
+    display: none;
 }
 
-/* Responsive adjustments for max-width: 500px */
-@media screen and (max-width: 500px) {
-    header {
-        padding: 2px; /* Adjust padding for even smaller screens */
-    }
-    
-    nav ul {
-        margin-left: 2px; /* Adjust margin for even smaller screens */
-    }
-    
-    /* ... (Other adjustments for smaller screens) ... */
-    
-    .slider {
-        height: 300px; /* Adjust slider height for smaller screens */
-    }
-    
-    .slides {
-        width: 700%; /* Adjust width of slides for smaller screens */
-    }
-    
-    .slide img {
-        width: 100%; /* Make images responsive */
-        height: 300px; /* Adjust image height for smaller screens */
-    }
-    
-    /* ... (Other adjustments for smaller screens) ... */
-    
-    #section-links {
-        padding: 65vh 0; /* Adjust padding for smaller screens */
-    }
+.slide{
+    width: 20%;
+    transition: 2s;
 }
+
+.slide img{
+    width: 600px;
+    height: auto;
+}
+
+    /* Modify section title styles */
+    .slider .section-title {
+        top: 20px; /* Adjust top position for smaller screens */
+    }
+
+    /* Modify manual navigation styles */
+    .navigation-manual {
+        position: absolute;
+        width: 100%; /* Adjust width for smaller screens */
+        margin-top: 60px; /* Adjust the margin-top as needed */
+        display: flex;
+        justify-content: center;
+        color: aqua;
+    }
+
+    /* Modify automatic navigation styles */
+    .navigation-auto {
+        width: 100%; /* Adjust width for smaller screens */
+        margin-top: 335px; /* Adjust margin-top for smaller screens */
+    }
+
+    /* Modify section links padding */
+    #section-links {
+        padding: 2vh 0; /* Adjust padding for smaller screens */
+        margin-top: 380px;
+    }
+
+    /* Modify section link margin */
+    .section-link {
+        margin: 0 10px; /* Adjust margin for smaller screens */
+    }
+
+    /* Add more adjustments for smaller screens as needed */
+
+}
+
+/* Rest of the existing CSS code... */
+
