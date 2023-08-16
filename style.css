@@ -19,7 +19,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5vw 2vw; /* Use viewport-relative units for padding */
+    margin-top: 300px; /*adjust for height*/
+    padding: 2vw 2vw; /* Use viewport-relative units for padding */
     background-color: #ffffff;
 }
 
@@ -67,7 +68,7 @@ section {
 /* Style the footer */
 footer {
     text-align: center;
-    padding: 20px; /* Increase padding to move the footer down */
+    padding: 1%; /* Increase padding to move the footer down */
     background-color: #ffffff;
     box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
     position: absolute;
@@ -82,15 +83,6 @@ h1 {
     margin: 0 0 5px; /* Adjust margins to align the header and h1 element */
 }
 
-/* Add hover effect to images */
-section img {
-    max-width: 20%;
-    height: auto;
-    transition: opacity 0.3s;
-    margin: 0 10px; /* Add margin to separate the images */
-    display: inline-block;
-}
-
 /* Display section titles on image hover */
 section:hover img {
     opacity: 0.7;
@@ -99,13 +91,15 @@ section:hover img {
 
 .slider{
     width: 800px;
-    height: 800px;
+    height: auto;
     border-radius: 10px;
     overflow: hidden;
     position: absolute;
-    top: 50%;
+    top: 650px; 
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 20px; /* Adjust the margin-top as needed */
+
 }
 
 .slides{
@@ -126,7 +120,7 @@ section:hover img {
 
 .slide img{
     width: 800px;
-    height: 500px;
+    height: auto;
 }
 
 /* Style the section titles above the images */
@@ -155,6 +149,7 @@ section:hover img {
     margin-top: -40px;
     display: flex;
     justify-content: center;
+    margin-top: 20px; /* Adjust the margin-top as needed */
 }
 
 .manual-btn{
@@ -219,12 +214,12 @@ section:hover img {
 }
 
 
-/* Style the sections above the slider */
 #section-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50vh 0; /* Use viewport-relative units for padding */
+    margin-top: 540px;
+    padding: 2vh 0; /* Use viewport-relative units for padding */
     background-color: #ffffff;
 }
 
@@ -307,6 +302,7 @@ section:hover img {
     opacity: 0.7;
 }
 
+
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
     header {
@@ -360,7 +356,41 @@ section:hover img {
     /* ... (Other adjustments for smaller screens) ... */
     
     #section-links {
-        padding: 20vh 0; /* Adjust padding for smaller screens */
+        padding: 5vh 0; /* Adjust padding for smaller screens */
+    }
+
+
+     /* Add red borders to containers */
+     body {
+        border: 2px solid red;
+    }
+    
+    header {
+        border: 2px solid red;
+    }
+    
+    nav ul {
+        border: 2px solid red;
+    }
+    
+    /* ... (Other container borders) ... */
+    
+    .slider {
+        border: 2px solid red;
+    }
+    
+    .slides {
+        border: 2px solid red;
+    }
+    
+    .slide {
+        border: 2px solid red;
+    }
+    
+    /* ... (Other container borders) ... */
+    
+    #section-links {
+        border: 2px solid red;
     }
 }
 
