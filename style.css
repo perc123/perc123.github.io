@@ -66,6 +66,18 @@ section {
     padding: 40px;
 }
 
+#contact{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#contact img{
+    margin: auto;
+    margin-top: 5%;
+    width: 30%;
+    height: auto;
+}
+
 /* Style the footer */
 footer {
     text-align: center;
@@ -467,7 +479,7 @@ section:hover img {
         border-radius: 10px;
         overflow: hidden;
         position: absolute;
-        top: 270px;
+        top: 275px;
         left: 50%;
         transform: translate(-50%, -50%);
         margin-top: 20px; /* Adjust the margin-top as needed */
