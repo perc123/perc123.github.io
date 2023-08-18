@@ -907,7 +907,7 @@ section:hover img {
 
 
 /* Add a media query for screens with a max-width of 1550px */
-@media (max-width: 1550px) {
+@media (max-width: 1650px) {
     /* Reset default margin and padding for the whole page */
     body, header, nav, ul, li {
         margin: 0;
@@ -926,7 +926,7 @@ section:hover img {
         padding: 2vw 2vw; /* Adjust padding for smaller screens */
         margin: 0;
         color: black;
-        margin-top: 65px;
+        margin-top: 45px;
     }
 
     #logo {
