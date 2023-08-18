@@ -436,11 +436,17 @@ section:hover img {
 
 /* Add a media query for screens with a max-width of 1300px */
 @media (max-width: 1300px) {
+    /* Reset default margin and padding for the whole page */
+    body, header, nav, ul, li {
+        margin: 0;
+        padding: 0;
+    }
 
     /* Adjust body font size and padding */
     body {
         font-size: 14px; /* Adjust font size for smaller screens */
-        padding: 2vw; /* Adjust padding for smaller screens */
+        padding: 0; /* Remove default padding */
+        overflow-x: hidden; /* Hide horizontal scrollbar if necessary */
     }
 
     /* Modify header padding and margins */
@@ -448,7 +454,7 @@ section:hover img {
         padding: 2vw 2vw; /* Adjust padding for smaller screens */
         margin: 0;
         color: black;
-        margin-top: 50px;
+        margin-top: 65px;
     }
 
     #logo {
@@ -537,7 +543,7 @@ section:hover img {
     /* Modify section links padding */
     #section-links {
         padding: 2vh 0; /* Adjust padding for smaller screens */
-        margin-top: 300px;
+        margin-top: 320px;
     }
 
     /* Modify section link margin */
