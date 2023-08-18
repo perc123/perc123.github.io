@@ -92,8 +92,9 @@ footer {
 /* Style the h1 element */
 h1 {
     font-size: 25px;
-    font-weight: bold;
+    font-weight: bolder;
     margin: 0 0 5px; /* Adjust margins to align the header and h1 element */
+    color: black;
 }
 
 /* Display section titles on image hover */
@@ -282,6 +283,13 @@ section:hover img {
     text-align: center;
 }
 
+#sound-gallery {
+    text-align: center;
+}
+#multimedia-gallery {
+    text-align: center;
+}
+
 .photo-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -314,7 +322,7 @@ section:hover img {
 }
 
 
-/* Add a media query for screens with a max-width of 500px */
+/* Add a media query for screens with a max-width of 700px */
 @media (max-width: 700px) {
 
     /* Adjust body font size and padding */
@@ -535,5 +543,358 @@ section:hover img {
     /* Modify section link margin */
     .section-link {
         margin: 0 10px; /* Adjust margin for smaller screens */
+    }
+}
+
+
+/* Add a media query for screens with a max-width of 500px */
+@media (max-width: 500px) {
+
+    /* Adjust body font size and padding */
+    body {
+        font-size: 11px; /* Adjust font size for smaller screens */
+        padding: 2vw; /* Adjust padding for smaller screens */
+    }
+
+    /* Modify header padding and margins */
+    header {
+        padding: 2vw 2vw; /* Adjust padding for smaller screens */
+        margin: 0;
+        color: black;
+        margin-top: 140px;
+    }
+
+    #logo {
+        color: black;
+        margin-right: 80px;
+    }
+    /* Modify navigation menu margins and font size */
+    nav ul {
+        margin-left: 0; /* Remove left margin for smaller screens */
+    }
+
+    nav ul li {
+        margin-right: 2px; /* Adjust margin for smaller screens */
+    }
+
+    /* Adjust section padding */
+    section {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    /* Modify footer padding and margin-top */
+    footer {
+        padding: 10px; /* Adjust padding for smaller screens */
+        margin-top: 10px; /* Adjust margin-top for smaller screens */
+    }
+
+    /* Modify h1 font size */
+    h1 {
+        font-size:12px; /* Adjust font size for smaller screens */
+        color: black;
+    }
+
+    /* Modify slider styles */
+    .slider{
+        width: 300px;
+        height: 180px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: absolute;
+        top: 275px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 20px; /* Adjust the margin-top as needed */
+    }
+
+
+    .slides{
+        width: 500%;
+        display: flex;
+
+    }
+
+    .slides input{
+        display: none;
+    }
+
+    .slide{
+        width: 20%;
+        transition: 2s;
+    }
+
+    .slide img{
+        width: 300px;
+        height: auto;
+    }
+
+    /* Modify section title styles */
+    .slider .section-title {
+        top: 20px; /* Adjust top position for smaller screens */
+    }
+
+    /* Modify manual navigation styles */
+    .navigation-manual {
+        position: absolute;
+        width: 100%; /* Adjust width for smaller screens */
+        margin-top: 60px; /* Adjust the margin-top as needed */
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Modify automatic navigation styles */
+    .navigation-auto {
+        width: 100%; /* Adjust width for smaller screens */
+        margin-top: 335px; /* Adjust margin-top for smaller screens */
+    }
+
+    /* Modify section links padding */
+    #section-links {
+        padding: 2vh 0; /* Adjust padding for smaller screens */
+        margin-top: 230px;
+    }
+
+    /* Modify section link margin */
+    .section-link {
+        margin: 0 10px; /* Adjust margin for smaller screens */
+    }
+
+    .section-link h2 {
+        font-size: 13px;
+    }
+}
+
+/* Add a media query for screens with a max-width of 800px */
+@media (max-width: 800px) {
+
+    /* Adjust body font size and padding */
+    body {
+        font-size: 11px; /* Adjust font size for smaller screens */
+        padding: 2vw; /* Adjust padding for smaller screens */
+    }
+
+    /* Modify header padding and margins */
+    header {
+        padding: 2vw 2vw; /* Adjust padding for smaller screens */
+        margin: 0;
+        color: black;
+        margin-top: 140px;
+    }
+
+    #logo {
+        color: black;
+        margin-right: 80px;
+    }
+    /* Modify navigation menu margins and font size */
+    nav ul {
+        margin-left: 0; /* Remove left margin for smaller screens */
+    }
+
+    nav ul li {
+        margin-right: 2px; /* Adjust margin for smaller screens */
+    }
+
+    /* Adjust section padding */
+    section {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    /* Modify footer padding and margin-top */
+    footer {
+        padding: 10px; /* Adjust padding for smaller screens */
+        margin-top: 10px; /* Adjust margin-top for smaller screens */
+    }
+
+    /* Modify h1 font size */
+    h1 {
+        font-size:12px; /* Adjust font size for smaller screens */
+        color: black;
+    }
+
+    /* Modify slider styles */
+    .slider{
+        width: 300px;
+        height: 180px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: absolute;
+        top: 275px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 20px; /* Adjust the margin-top as needed */
+    }
+
+
+    .slides{
+        width: 500%;
+        display: flex;
+
+    }
+
+    .slides input{
+        display: none;
+    }
+
+    .slide{
+        width: 20%;
+        transition: 2s;
+    }
+
+    .slide img{
+        width: 300px;
+        height: auto;
+    }
+
+    /* Modify section title styles */
+    .slider .section-title {
+        top: 20px; /* Adjust top position for smaller screens */
+    }
+
+    /* Modify manual navigation styles */
+    .navigation-manual {
+        position: absolute;
+        width: 100%; /* Adjust width for smaller screens */
+        margin-top: 60px; /* Adjust the margin-top as needed */
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Modify automatic navigation styles */
+    .navigation-auto {
+        width: 100%; /* Adjust width for smaller screens */
+        margin-top: 335px; /* Adjust margin-top for smaller screens */
+    }
+
+    /* Modify section links padding */
+    #section-links {
+        padding: 2vh 0; /* Adjust padding for smaller screens */
+        margin-top: 200px;
+    }
+
+    /* Modify section link margin */
+    .section-link {
+        margin: 0 10px; /* Adjust margin for smaller screens */
+    }
+
+    .section-link h2 {
+        font-size: 13px;
+    }
+}
+
+
+/* Add a media query for screens with a max-width of 1000px */
+@media (max-width: 1000px) {
+
+    /* Adjust body font size and padding */
+    body {
+        font-size: 11px; /* Adjust font size for smaller screens */
+        padding: 2vw; /* Adjust padding for smaller screens */
+    }
+
+    /* Modify header padding and margins */
+    header {
+        padding: 2vw 2vw; /* Adjust padding for smaller screens */
+        margin: 0;
+        color: black;
+        margin-top: 140px;
+    }
+
+    #logo {
+        color: black;
+        margin-right: 80px;
+    }
+    /* Modify navigation menu margins and font size */
+    nav ul {
+        margin-left: 0; /* Remove left margin for smaller screens */
+    }
+
+    nav ul li {
+        margin-right: 2px; /* Adjust margin for smaller screens */
+    }
+
+    /* Adjust section padding */
+    section {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    /* Modify footer padding and margin-top */
+    footer {
+        padding: 10px; /* Adjust padding for smaller screens */
+        bottom: 0;
+    }
+
+    /* Modify h1 font size */
+    h1 {
+        font-size:12px; /* Adjust font size for smaller screens */
+        color: black;
+    }
+
+    /* Modify slider styles */
+    .slider{
+        width: 300px;
+        height: 180px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: absolute;
+        top: 275px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 20px; /* Adjust the margin-top as needed */
+    }
+
+
+    .slides{
+        width: 500%;
+        display: flex;
+
+    }
+
+    .slides input{
+        display: none;
+    }
+
+    .slide{
+        width: 20%;
+        transition: 2s;
+    }
+
+    .slide img{
+        width: 300px;
+        height: auto;
+    }
+
+    /* Modify section title styles */
+    .slider .section-title {
+        top: 20px; /* Adjust top position for smaller screens */
+    }
+
+    /* Modify manual navigation styles */
+    .navigation-manual {
+        position: absolute;
+        width: 100%; /* Adjust width for smaller screens */
+        margin-top: 60px; /* Adjust the margin-top as needed */
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Modify automatic navigation styles */
+    .navigation-auto {
+        width: 100%; /* Adjust width for smaller screens */
+        margin-top: 335px; /* Adjust margin-top for smaller screens */
+    }
+
+    /* Modify section links padding */
+    #section-links {
+        padding: 2vh 0; /* Adjust padding for smaller screens */
+        margin-top: 200px;
+    }
+
+    /* Modify section link margin */
+    .section-link {
+        margin: 0 10px; /* Adjust margin for smaller screens */
+    }
+
+    .section-link h2 {
+        font-size: 13px;
     }
 }
