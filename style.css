@@ -356,7 +356,7 @@ section:hover img {
     border-radius: 5px;
     opacity: 0;
     transition: opacity 0.3s;
-    font-size: x-large;
+    font-size: large;
 }
 
 .gallery-item:hover .image-title {
@@ -376,6 +376,13 @@ section:hover img {
     margin-top: 10px; /* Add spacing between the two paragraphs */
 }
 
+.web-links{
+    margin-top: 20px;
+}
+
+.video-container{
+    padding: 100px;
+}
 
 /* Add a media query for screens with a max-width of 700px ----------------------------------------------------------------------*/
 @media (max-width: 700px) {
