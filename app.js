@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const sections = [
-        { link: document.querySelector('a[href="#upcoming"]'), section: document.getElementById('upcoming') },
-        { link: document.querySelector('a[href="#about"]'), section: document.getElementById('about') },
-        { link: document.querySelector('a[href="#contact"]'), section: document.getElementById('contact') },
+        { link: document.querySelector('a[href="index.html#upcoming"]'), section: document.getElementById('upcoming') },
+        { link: document.querySelector('a[href="index.html#about"]'), section: document.getElementById('about') },
+        { link: document.querySelector('a[href="index.html#contact"]'), section: document.getElementById('contact') },
     ];
 
     const slider = document.querySelector('.slider');
