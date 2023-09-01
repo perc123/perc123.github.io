@@ -384,13 +384,19 @@ section:hover img {
     padding: 100px;
 }
 
+#sound video{
+    max-width: 50%; /* Make the video player responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Add some spacing around the video */
+}
+
 /* Add a media query for screens with a max-width of 700px ----------------------------------------------------------------------*/
 @media (max-width: 700px) {
 
     /* Adjust body font size and padding */
     body {
         font-size: 14px; /* Adjust font size for smaller screens */
-        padding: 2vw; /* Adjust padding for smaller screens */
+        padding: 1vw; /* Adjust padding for smaller screens */
     }
 
     /* Modify header padding and margins */
