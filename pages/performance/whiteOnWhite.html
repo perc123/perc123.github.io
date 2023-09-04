@@ -45,15 +45,31 @@
     </video>
 
     <div class="photo-gallery">
-        <img src="fotos/white1.JPG" alt="white1">
-        <img src="fotos/white2.JPG" alt="white2">
-        <img src="fotos/white3.JPG" alt="white3">
-        <img src="fotos/white4.JPG" alt="white4">
-        <img src="fotos/white5.JPG" alt="white5">
-        <img src="fotos/white5.JPG" alt="white5">
-        <img src="fotos/white6.JPG" alt="white6">
-        <!-- Add more images as needed -->
+        <div class="image"><img src="fotos/white1.JPG" alt="white1"></div>
+        <div class="image"><img src="fotos/white2.JPG" alt="white2"></div>
+        <div class="image"><img src="fotos/white3.JPG" alt="white3"></div>
+        <div class="image"><img src="fotos/white4.JPG" alt="white4"></div>
+        <div class="image"><img src="fotos/white5.JPG" alt="white5"></div>
+        <div class="image"><img src="fotos/white6.JPG" alt="white6"></div>
     </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="fotos/white1.JPG" alt="">
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('.photo-gallery img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+        }
+    });
+    document.querySelector('.popup-image span').onclick = () => {
+        document.querySelector('.popup-image').style.display = 'none';
+    }
+</script>
 </section>
 <!-- You can add more sections and content as needed -->
 <footer>

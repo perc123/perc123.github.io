@@ -33,13 +33,30 @@
     </div>
 
     <div class="photo-gallery">
-        <img src="fotos/elsewhere.JPG" alt="elsewhere1">
-        <img src="fotos/elsewhere1.JPG" alt="elsewhere2">
-        <img src="fotos/elsewhere2.JPG" alt="elsewhere3">
-        <img src="fotos/elsewhere3.JPG" alt="elsewhere4">
-        <img src="fotos/corporel1.JPG" alt="elsewhere5">
-        <!-- Add more images as needed -->
+        <div class="image"><img src="fotos/elsewhere.JPG" alt="elsewhere1"></div>
+        <div class="image"><img src="fotos/elsewhere1.JPG" alt="elsewhere2"></div>
+        <div class="image"><img src="fotos/elsewhere2.JPG" alt="elsewhere3"></div>
+        <div class="image"><img src="fotos/elsewhere3.JPG" alt="elsewhere4"></div>
+        <div class="image"><img src="fotos/corporel1.JPG" alt="elsewhere5"></div>
     </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="fotos/corporel1.JPG" alt="">
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('.photo-gallery img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+        }
+    });
+    document.querySelector('.popup-image span').onclick = () => {
+        document.querySelector('.popup-image').style.display = 'none';
+    }
+</script>
 </section>
 <!-- You can add more sections and content as needed -->
 <footer>

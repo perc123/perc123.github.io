@@ -40,13 +40,30 @@
     </audio>
 
     <div class="photo-gallery">
-        <img src="fotos/hamlet1.jpg" alt="hamlet1">
-        <img src="fotos/hamlet2.jpg" alt="hamlet2">
-        <img src="fotos/hamlet3.jpg" alt="hamlet3">
-        <img src="fotos/hamlet4.jpg" alt="hamlet4">
-        <img src="fotos/maschine.jpg" alt="maschine">
-        <!-- Add more images as needed -->
+        <div class="image"><img src="fotos/hamlet1.jpg" alt="hamlet1"></div>
+        <div class="image"><img src="fotos/hamlet2.jpg" alt="hamlet2"></div>
+        <div class="image"><img src="fotos/hamlet3.jpg" alt="hamlet3"></div>
+        <div class="image"><img src="fotos/hamlet4.jpg" alt="hamlet4"></div>
+        <div class="image"><img src="fotos/maschine.jpg" alt="maschine"></div>
     </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="fotos/maschine.jpg" alt="">
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('.photo-gallery img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+        }
+    });
+    document.querySelector('.popup-image span').onclick = () => {
+        document.querySelector('.popup-image').style.display = 'none';
+    }
+</script>
 </section>
 <!-- You can add more sections and content as needed -->
 <footer>

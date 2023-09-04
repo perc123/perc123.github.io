@@ -36,12 +36,27 @@
         <!-- Add the link to the website -->
         <a href="https://www.collectivemootpoint" target="_blank">_.mootpoint</a>
     </div>
-
     <div class="photo-gallery">
-        <img src="fotos/tiefschlag.jpg" alt="tiefschlag">
-        <!-- Add more images as needed -->
+        <div class="image"><img src="fotos/tiefschlag.jpg" alt="tiefschlag"></div>
+    </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="fotos/tiefschlag.jpg" alt="">
     </div>
 </section>
+
+<script>
+    document.querySelectorAll('.photo-gallery img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+        }
+    });
+    document.querySelector('.popup-image span').onclick = () => {
+        document.querySelector('.popup-image').style.display = 'none';
+    }
+</script>
 
 <!-- You can add more sections and content as needed -->
 

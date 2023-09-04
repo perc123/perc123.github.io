@@ -35,10 +35,27 @@
     </div>
 
     <div class="photo-gallery">
-        <img src="fotos/splitting1.jpg" alt="splitting1">
-        <img src="fotos/temazcal.jpg" alt="splitting2">
-        <!-- Add more images as needed -->
+        <div class="image"><img src="fotos/splitting1.jpg" alt="splitting1"></div>
+        <div class="image"><img src="fotos/temazcal.jpg" alt="splitting2"></div>
     </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="fotos/splitting1.jpg" alt="">
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('.photo-gallery img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+        }
+    });
+    document.querySelector('.popup-image span').onclick = () => {
+        document.querySelector('.popup-image').style.display = 'none';
+    }
+</script>
 </section>
 <!-- You can add more sections and content as needed -->
 <footer>
