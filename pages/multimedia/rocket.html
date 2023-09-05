@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Rhapsody</title>
+    <link rel="stylesheet" href="../../style.css"> <!-- Link to your CSS stylesheet -->
+</head>
+<body>
+<header>
+    <div id="logo">
+        <a href="../../index.html" style="text-decoration: none;"><h1>fanis gioles</h1></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../../index.html#upcoming">upcoming</a></li>
+            <li><a href="../../index.html#about">about</a></li>
+            <li><a href="../../index.html#contact">contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="sound">
+    <h3 class="section-title">rocket rhapsody</h3>
+    <div class="performance-description">
+        <p>Rocket Rhapsody was an interactive multimedia project in collaboration with HTW Berlin.
+            During the Rocket Rhapsody concert of HTW-Tonkollektiv the audience had the opportunity to actively form the set of the concert by
+        applying elements on an application, control their movement and their appearance duration.</p>
+        <p class="italic-text">Rocket Rhapsody Team 2023</p>
+    </div>
+
+
+    <div class="photo-gallery">
+        <div class="image"><img src="fotos/rocketP.jpeg" alt="rocket"></div>
+        <div class="image"><img src="fotos/freddy.jpg" alt="rocket1"></div>
+        <div class="image"><img src="fotos/team%20rocket.jpg" alt="rocket2"></div>
+        <div class="image"><img src="fotos/endles%20doner.jpg" alt="rocket3"></div>
+    </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="fotos/freddy.jpg" alt="">
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('.photo-gallery img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+        }
+    });
+    document.querySelector('.popup-image span').onclick = () => {
+        document.querySelector('.popup-image').style.display = 'none';
+    }
+</script>
+
+<!-- You can add more sections and content as needed -->
+
+<footer>
+    <p>&copy; 2023 Fanis Gioles. All rights reserved.</p>
+</footer>
+</body>
+</html>

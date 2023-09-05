@@ -29,15 +29,34 @@
         On the same time, I recorded sounds from different places in the city like the ADATA Island, Nebet Tepe, Maritsa River, Alyosaha, Park of the Tsar Simeon and the singing fountains, the railway station as well as crowded public places in Kapana. The different sounds, which I edited in various computer software (Max MSP, Ableton Live), where used as a soundscape in the concert and will also be used in my final proposal for Plovdiv2019.
 
         The concert was a one-hour performance, where I collaborated with the local artist Veso Petrov. We performed the musical ‘scores’/ pictures through a continuous sound drone, made from the recordings.</p>
+
     <div class="photo-gallery">
-        <img src="fotos/PLOVDIV1.jpg" alt="PLOVDIV1">
-        <img src="fotos/PLOVDIV2.jpg" alt="PLOVDIV2">
-        <img src="fotos/PLOVDIV3.jpg" alt="PLOVDIV3">
-        <img src="fotos/PLOVDIV4.jpg" alt="PLOVDIV4">
-        <img src="fotos/PLOVDIV5.jpg" alt="PLOVDIV5">
-        <!-- Add more images as needed -->
+        <div class="image"><img src="fotos/PLOVDIV1.jpg" alt="PLOVDIV1"></div>
+        <div class="image"><img src="fotos/PLOVDIV2.jpg" alt="PLOVDIV2"></div>
+        <div class="image"><img src="fotos/PLOVDIV3.jpg" alt="PLOVDIV3"></div>
+        <div class="image"><img src="fotos/PLOVDIV4.jpg" alt="PLOVDIV4"></div>
+        <div class="image"><img src="fotos/PLOVDIV5.jpg" alt="PLOVDIV5"></div>
+    </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="fotos/PLOVDIV1.jpg" alt="">
     </div>
 </section>
+
+<script>
+    document.querySelectorAll('.photo-gallery img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+        }
+    });
+
+    document.querySelector('.popup-image span').onclick = () => {
+        document.querySelector('.popup-image').style.display = 'none';
+        }
+</script>
+
 
 <!-- You can add more sections and content as needed -->
 

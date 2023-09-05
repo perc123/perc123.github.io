@@ -31,17 +31,34 @@
         Nana Xu (live visuals), Anna Syrianou (stage design)</p>
     </div>
 
+
     <div class="photo-gallery">
-        <img src="fotos/Haiku.jpg" alt="shunkan">
-        <img src="fotos/Haiku1.jpg" alt="shunkan1">
-        <img src="fotos/Haiku2.jpg" alt="shunkan2">
-        <img src="fotos/Haiku3.jpg" alt="shunkan3">
-        <img src="fotos/Haiku4.jpg" alt="shunkan4">
-        <img src="fotos/Haiku5.jpg" alt="shunkan5">
-        <img src="fotos/Haiku6.jpg" alt="shunkan6">
-        <!-- Add more images as needed -->
+        <div class="image"><img src="fotos/Haiku.jpg" alt="shunkan"></div>
+        <div class="image"><img src="fotos/Haiku1.jpg" alt="shunkan1"></div>
+        <div class="image"><img src="fotos/Haiku2.jpg" alt="shunkan2"></div>
+        <div class="image"><img src="fotos/Haiku3.jpg" alt="shunkan3"></div>
+        <div class="image"><img src="fotos/Haiku4.jpg" alt="shunkan4"></div>
+        <div class="image"><img src="fotos/Haiku5.jpg" alt="shunkan5"></div>
+        <div class="image"><img src="fotos/Haiku6.jpg" alt="shunkan6"></div>
+    </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="fotos/Haiku.jpg" alt="">
     </div>
 </section>
+
+<script>
+    document.querySelectorAll('.photo-gallery img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+        }
+    });
+    document.querySelector('.popup-image span').onclick = () => {
+        document.querySelector('.popup-image').style.display = 'none';
+    }
+</script>
 
 <!-- You can add more sections and content as needed -->
 
