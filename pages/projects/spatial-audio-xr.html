@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatial Audio XR Toolkit</title>
+    <link rel="stylesheet" href="../../style.css"> <!-- Link to your CSS stylesheet -->
+</head>
+<body>
+<header>
+    <div id="logo">
+        <a href="../../index.html" style="text-decoration: none;"><h1>fanis gioles</h1></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../../index.html#upcoming">upcoming</a></li>
+            <li><a href="../../index.html#about">about</a></li>
+            <li><a href="../../index.html#contact">contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="projects-gallery">
+    <h3 class="section-title">spatial audio xr toolkit</h3>
+    <div class="performance-description">
+        <p>A bachelor thesis project exploring whether embodied, 3D interaction makes spatial sound
+            design more intuitive than the 2D DAW interfaces it's normally confined to. Wearing an
+            Oculus Quest 3 in passthrough mode, a performer moves virtual sound sources by hand while
+            hearing the result rendered binaurally in real time. Three components talk over OSC: Unity XR
+            handles interaction and visualization, Max/MSP with IRCAM's spat5 handles spatialization and
+            HRTF-based binaural rendering, and an "inverse source transformation" layer reconciles the two —
+            spat5 assumes a stationary listener, so the system inverts the performer's movement to keep
+            spat5's frame of reference fixed while the performer still experiences full spatial responsiveness.
+            A small user study found the interaction intuitive, with audio feedback essential to the experience.</p>
+    </div>
+
+    <div class="web-links">
+        <a href="https://github.com/perc123/spatial-audio-xr-toolkit" target="_blank">spatial-audio-xr-toolkit on GitHub</a>
+    </div>
+
+    <div class="photo-gallery">
+        <div class="image"><img src="fotos/spatial-audio-xr.svg" alt="Spatial Audio XR Toolkit"></div>
+    </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="fotos/spatial-audio-xr.svg" alt="">
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('.photo-gallery img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+        }
+    });
+    document.querySelector('.popup-image span').onclick = () => {
+        document.querySelector('.popup-image').style.display = 'none';
+    }
+</script>
+
+<!-- You can add more sections and content as needed -->
+
+<footer>
+    <p>&copy; 2023 Fanis Gioles. All rights reserved.</p>
+</footer>
+</body>
+</html>

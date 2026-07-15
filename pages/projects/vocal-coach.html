@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocal Coach Prototype</title>
+    <link rel="stylesheet" href="../../style.css"> <!-- Link to your CSS stylesheet -->
+</head>
+<body>
+<header>
+    <div id="logo">
+        <a href="../../index.html" style="text-decoration: none;"><h1>fanis gioles</h1></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../../index.html#upcoming">upcoming</a></li>
+            <li><a href="../../index.html#about">about</a></li>
+            <li><a href="../../index.html#contact">contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="projects-gallery">
+    <h3 class="section-title">vocal coach prototype</h3>
+    <div class="performance-description">
+        <p>A browser-based real-time singing analysis tool: it captures microphone input via the Web
+            Audio API (echo cancellation and noise suppression disabled to preserve signal fidelity),
+            runs the YIN pitch detection algorithm over 2048-sample frames, and draws a rolling pitch
+            curve — in Hz, note names, and cents — alongside a custom spectral-flux onset detector that
+            marks where each note begins. Built as a foundation for a future "sing-back" exercise mode
+            that compares a performance against a target melody and gives teacher-like feedback on pitch
+            and timing accuracy. Vanilla JavaScript, Vite, HTML5 Canvas — about 250 lines of application
+            code, working in Chrome, Edge and Safari on desktop.</p>
+    </div>
+
+    <div class="web-links">
+        <a href="https://github.com/perc123/vocal-coach-prototype" target="_blank">vocal-coach-prototype on GitHub</a>
+    </div>
+
+    <div class="photo-gallery">
+        <div class="image"><img src="fotos/vocal-coach.svg" alt="Vocal Coach Prototype"></div>
+    </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="fotos/vocal-coach.svg" alt="">
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('.photo-gallery img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+        }
+    });
+    document.querySelector('.popup-image span').onclick = () => {
+        document.querySelector('.popup-image').style.display = 'none';
+    }
+</script>
+
+<!-- You can add more sections and content as needed -->
+
+<footer>
+    <p>&copy; 2023 Fanis Gioles. All rights reserved.</p>
+</footer>
+</body>
+</html>

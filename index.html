@@ -43,7 +43,10 @@
             As an artist he presented his works at festivals worldwide (Darmstädter Ferien Kurse,
             International Ensemble Modern Akademie, OPUS IX, San Marino New Music Festival),
             he has been a resident at Amplify Berlin and at ADATA AiR in Plovdiv - European Capital of
-            Culture 2019 and the is the 2017 DAAD laureate in Hambung</p>
+            Culture 2019 and the is the 2017 DAAD laureate in Hambung. Alongside his artistic practice he
+            builds the tools that practice increasingly runs on: real-time DSP, spatial audio and XR
+            systems, and machine-learning models for sound, presented in more technical form under
+            <a href="pages/projects/projects.html">projects</a>.</p>
         <div class="web-links">
             <!-- Add the link to the website -->
             <a href="https://www.collectivemootpoint.com" target="_blank">_.mootpoint</a>
@@ -65,6 +68,7 @@
         <input type="radio" name="radio-btn" id="radio1">
         <input type="radio" name="radio-btn" id="radio2">
         <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
         <!--radio buttons start-->
         <!--slide images start-->
         <div class="slide first">
@@ -82,6 +86,11 @@
                 <img src="fotos/multimedia.jpg" alt="Multimedia">
             </a>
         </div>
+        <div class="slide">
+            <a href="pages/projects/projects.html"> <!-- Add the link to the projects page -->
+                <img src="pages/projects/fotos/projects-cover.svg" alt="Projects">
+            </a>
+        </div>
 
         <!--slide images end-->
         <!--automatic navigation start-->
@@ -89,6 +98,7 @@
             <div class="auto-btn1"></div>
             <div class="auto-btn2"></div>
             <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
         </div>
         <!--automatic navigation end-->
         </div>
@@ -97,6 +107,7 @@
             <label for="radio1" class="manual-btn"></label>
             <label for="radio2" class="manual-btn"></label>
             <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
         </div>
         <!--manual navigation end-->
     </div>
@@ -107,7 +118,7 @@
         setInterval(function(){
             document.getElementById('radio' + counter).checked = true;
             counter++
-            if(counter>3){
+            if(counter>4){
                 counter = 1;
             }
         }, 5000);
@@ -129,6 +140,11 @@
         <div class="section-link">
             <a href="pages/multimedia/multimedia.html">
                 <h2 class="section-title" id="multimedia">multimedia</h2>
+            </a>
+        </div>
+        <div class="section-link">
+            <a href="pages/projects/projects.html">
+                <h2 class="section-title" id="projects">projects</h2>
             </a>
         </div>
     </section>

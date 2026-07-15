@@ -192,6 +192,10 @@ section:hover img {
     margin-left:  -40%;
 }
 
+#radio4:checked ~ .first{
+    margin-left:  -60%;
+}
+
 /*css automatic navigation*/
 
 .navigation-auto{
@@ -225,9 +229,14 @@ section:hover img {
     background: #ffffff;
 }
 
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #ffffff;
+}
+
 
 #section-links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 510px;

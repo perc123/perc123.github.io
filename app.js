@@ -36,21 +36,26 @@ document.addEventListener('DOMContentLoaded', function () {
     const radio1 = document.getElementById('radio1');
     const radio2 = document.getElementById('radio2');
     const radio3 = document.getElementById('radio3');
+    const radio4 = document.getElementById('radio4');
     const performanceLink = document.querySelector('a[href="pages/performance/performance.html"]');
     const soundLink = document.querySelector('a[href="pages/sound/sound.html"]');
     const multimediaLink = document.querySelector('a[href="pages/multimedia/multimedia.html"]');
+    const projectsLink = document.querySelector('a[href="pages/projects/projects.html"]');
     const performance = document.getElementById('performance');
     const sound = document.getElementById('sound');
     const multimedia = document.getElementById('multimedia');
+    const projects = document.getElementById('projects');
 
     performance.style.fontWeight = 'normal';
     sound.style.fontWeight = 'normal';
     multimedia.style.fontWeight = 'normal';
+    projects.style.fontWeight = 'normal';
 
     navigationAuto.addEventListener('change', () => {
         performance.style.fontWeight = 'normal';
         sound.style.fontWeight = 'normal';
         multimedia.style.fontWeight = 'normal';
+        projects.style.fontWeight = 'normal';
 
         if (radio1.checked) {
             performance.style.fontWeight = 'bold';
@@ -60,6 +65,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         if (radio3.checked) {
             multimedia.style.fontWeight = 'bold';
+        }
+        if (radio4.checked) {
+            projects.style.fontWeight = 'bold';
         }
     });
 });
